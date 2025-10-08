@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>OUR TEAM 😎</h1>
+    </div>
+    <div class="home">
+        <div class="card">
+            <div class="content-box">
+                <div class="content">
+                    <h2>abhay <br><span>Fullstack developer</span></h2>
+                    <div class="imgbx">
+                        <img src="img/01-img.jpg" alt="">
+                    </div>
+                    <Button>Read More</Button>
+                </div>
+            </div>
+            <div class="toggle"><span></span></div>
+        </div>
+
+        <div class="card">
+            <div class="content-box">
+                <div class="content">
+                    <h2>ritika <br><span>Fullstack developer</span></h2>
+                    <div class="imgbx">
+                        <img src="img/02-img.jpg" alt="">
+                    </div>
+                    <Button>Read More</Button>
+                </div>
+            </div>
+            <div class="toggle"><span></span></div>
+        </div>
+        
+        <div class="card">
+            <div class="content-box">
+                <div class="content">
+                    <h2>Anjel<br><span>Begginer Developer</span></h2>
+                    <div class="imgbx">
+                        <img src="img/03-img.jpg" alt="">
+                    </div>
+                    <Button>Read More</Button>
+                </div>
+            </div>
+            <div class="toggle"><span></span></div>
+        </div>
+
+        <div class="card">
+            <div class="content-box">
+                <div class="content">
+                    <h2>Devil <br><span>Junior Developer</span></h2>
+                    <div class="imgbx">
+                        <img src="img/04-img.webp" alt="">
+                    </div>
+                    <Button>Read More</Button>
+                </div>
+            </div>
+            <div class="toggle"><span></span></div>
+        </div>
+    </div>
+    <script>
+        let toggles = document.querySelectorAll('.toggle');
+
+        toggles.forEach((toggle, index) =>{
+            toggle.onclick = function(){
+                let card = toggle.closest('.card');
+                card.classList.toggle('active');
+            }
+        });
+    </script>
+</body>
+</html>
